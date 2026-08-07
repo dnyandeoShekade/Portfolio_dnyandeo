@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Users, Sparkles, ArrowRight, Award } from "lucide-react";
+import { Sparkles, ArrowRight, Award, Briefcase } from "lucide-react";
 
 const ROLES = [
   "Frontend Developer",
@@ -47,6 +47,83 @@ export default function HeroSection() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-slate-50 text-slate-900 flex flex-col justify-center px-6 md:px-20 py-20 relative overflow-hidden font-sans">
       
+      {/* Download Resume Button - Top Right Corner */}
+      <motion.div
+        initial={{ opacity: 0, x: 100, rotate: -10 }}
+        animate={{ opacity: 1, x: 0, rotate: 0 }}
+        transition={{ 
+          duration: 0.8, 
+          delay: 0.5,
+          type: "spring",
+          stiffness: 100
+        }}
+        className="absolute top-8 right-8 z-20"
+      >
+        <motion.a
+          whileHover={{ 
+            scale: 1.1, 
+            rotate: 5,
+            boxShadow: "0 20px 60px rgba(59, 130, 246, 0.4)" 
+          }}
+          whileTap={{ scale: 0.95 }}
+          animate={{
+            y: [0, -10, 0],
+          }}
+          transition={{
+            y: {
+              repeat: Infinity,
+              duration: 2,
+              ease: "easeInOut"
+            }
+          }}
+          href="/Dnyandeo Shekade Resume.pdf"
+          download
+          className="group relative inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-600 text-white font-semibold rounded-full shadow-xl shadow-blue-500/40 hover:shadow-blue-500/60 transition-all duration-300 overflow-hidden"
+        >
+          {/* Animated shine effect */}
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+            animate={{
+              x: ["-100%", "200%"]
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 3,
+              ease: "linear"
+            }}
+          />
+          
+          {/* Download Icon with bounce animation */}
+          <motion.svg 
+            className="w-5 h-5 relative z-10 text-white" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+            animate={{
+              y: [0, 3, 0]
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 1.5,
+              ease: "easeInOut"
+            }}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </motion.svg>
+          <span className="relative z-10 text-white hidden sm:inline">Download Resume</span>
+          <span className="relative z-10 sm:hidden">Resume</span>
+          
+          {/* Arrow on hover */}
+          <motion.div
+            className="relative z-10 "
+            initial={{ x: -5, opacity: 0 }}
+            whileHover={{ x: 0, opacity: 1 }}
+          >
+            <ArrowRight className="w-4 h-4 " />
+          </motion.div>
+        </motion.a>
+      </motion.div>
+
       {/* --- Ambient Glowing Orbs & Background Grid --- */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-blue-400/10 blur-[160px] rounded-full pointer-events-none" />
       <div className="absolute top-1/3 left-10 w-[350px] h-[350px] bg-cyan-400/10 blur-[130px] rounded-full pointer-events-none" />
@@ -218,24 +295,21 @@ export default function HeroSection() {
             />
           </div>
 
-          {/* Company Badge Pill */}
+          {/* Availability Status Badge Pill */}
           <div className="text-base sm:text-lg text-slate-600 flex items-center gap-2.5 flex-wrap">
-            <span>Currently, I&apos;m a Frontend Developer at</span>
+            <span>Status:</span>
             
-            <motion.a
+            <motion.div
               whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.98 }}
-              href="#"
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/80 border border-blue-200 text-blue-600 font-medium text-sm sm:text-base hover:bg-blue-50 hover:border-blue-300 transition-all duration-300 backdrop-blur-md shadow-md shadow-blue-500/5 group"
+              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/80 border border-emerald-200 text-emerald-700 font-medium text-sm sm:text-base backdrop-blur-md shadow-md shadow-emerald-500/5 group"
             >
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-              <Users className="w-4 h-4 text-blue-500" />
-              <span>Innovins Technologies</span>
-              <ArrowRight className="w-3.5 h-3.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-blue-600" />
-            </motion.a>
+              <Briefcase className="w-4 h-4 text-emerald-600" />
+              <span>Open to New Opportunities</span>
+            </motion.div>
           </div>
 
           {/* Bio Description with Highlighted 2+ Years */}
