@@ -7,15 +7,25 @@ import { motion } from "framer-motion";
 import { Sparkles, Globe, ArrowUpRight, Code } from "lucide-react";
 
 const featuredProjects = [
-  {
+  
+     {
     id: 1,
-    title: "Yuva Nexus Website",
-    techStack: ["Next.js", "Tailwind CSS", "REST API", "SEO", "JavaScript"],
+    title: "Job Portal Web Application",
+    techStack: ["Next.js", "React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
     description:
-      "Developed the official company website for Yuva Nexus Tech LLP. Implemented dynamic routing using URL parameters for service, blog, and project detail pages. Integrated API handling to dynamically load content from the backend with dynamic SEO metadata in Next.js for maximum search visibility.",
-    link: "https://yuvanexus.com/",
-    image: "/project1.png",
+      "Developed a full-stack job portal with separate user and admin functionalities. Implemented user authentication and authorization using JWT with protected routes. Built features including job listing, job search, job applications, and user dashboard. Developed RESTful APIs using Node.js, Express.js, and MongoDB for users, jobs, and applications. Created a responsive and reusable UI using Next.js, React.js, and Tailwind CSS. Developed an admin dashboard to add, edit, and delete jobs, users, and applications.",
+    link: "https://job-board-two-blush.vercel.app/",
+    image: "/job portal.png",
   },
+  // {
+  //   id: 1,
+  //   title: "Yuva Nexus Website",
+  //   techStack: ["Next.js", "Tailwind CSS", "REST API", "SEO", "JavaScript"],
+  //   description:
+  //     "Developed the official company website for Yuva Nexus Tech LLP. Implemented dynamic routing using URL parameters for service, blog, and project detail pages. Integrated API handling to dynamically load content from the backend with dynamic SEO metadata in Next.js for maximum search visibility.",
+  //   link: "https://yuvanexus.com/",
+  //   image: "/project1.png",
+  // },
   {
     id: 2,
     title: "Billing Cart Web",
@@ -25,6 +35,7 @@ const featuredProjects = [
     link: "https://billingcart.in/",
     image: "/project2.png",
   },
+ 
 ];
 
 export default function Projects() {
@@ -123,7 +134,7 @@ export default function Projects() {
                         alt={project.title}
                         fill
                         sizes="(max-width: 1024px) 100vw, 60vw"
-                        className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                        className="object-contain group-hover:scale-105 transition-transform duration-700 ease-out"
                       />
                       {/* Light subtle overlay on hover */}
                       <div className="absolute inset-0 bg-gradient-to-t from-blue-950/25 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -192,9 +203,9 @@ export default function Projects() {
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-blue-50 border border-blue-200 hover:border-blue-400/60 text-slate-800 hover:text-blue-600 font-medium text-xs sm:text-sm transition-all duration-300 backdrop-blur-md shadow-md shadow-blue-500/5 group/btn"
+                            className="inline-flex items-center gap-2 px-12 py-5 rounded-full bg-white hover:bg-blue-50 border border-blue-200 hover:border-blue-400/60 text-slate-800 hover:text-blue-600 font-medium text-xs sm:text-sm transition-all duration-300 backdrop-blur-md shadow-md shadow-blue-500/5 group/btn"
                           >
-                            <Globe className="w-4 h-4 text-blue-500 group-hover/btn:rotate-180 transition-transform duration-500" />
+                            <Globe className="w-6 h-6 text-blue-500 group-hover/btn:rotate-180 transition-transform duration-500" />
                             <span>Visit Website</span>
                             <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover/btn:text-blue-600 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300" />
                           </Link>

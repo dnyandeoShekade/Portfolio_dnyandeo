@@ -12,8 +12,9 @@ export default function Home() {
       <Header />
       <Banner />
       <Experience />
+            <Projects />
+
       <About />
-      <Projects />
       <Footer />
     </main>
   );
