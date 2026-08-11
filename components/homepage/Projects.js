@@ -7,11 +7,17 @@ import { motion } from "framer-motion";
 import { Sparkles, Globe, ArrowUpRight, Code } from "lucide-react";
 
 const featuredProjects = [
-  
-     {
+  {
     id: 1,
     title: "Job Portal Web Application",
-    techStack: ["Next.js", "React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+    techStack: [
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
     description:
       "Developed a full-stack job portal with separate user and admin functionalities. Implemented user authentication and authorization using JWT with protected routes. Built features including job listing, job search, job applications, and user dashboard. Developed RESTful APIs using Node.js, Express.js, and MongoDB for users, jobs, and applications. Created a responsive and reusable UI using Next.js, React.js, and Tailwind CSS. Developed an admin dashboard to add, edit, and delete jobs, users, and applications.",
     link: "https://job-board-two-blush.vercel.app/",
@@ -28,6 +34,22 @@ const featuredProjects = [
   // },
   {
     id: 2,
+    title: "Wellness Forever Corporate Website",
+    techStack: [
+      "Next.js",
+      "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Axios",
+      "CMS Integration",
+    ],
+    description:
+      "Wellness Forever Corporate Website is a responsive corporate web platform built using Next.js, React.js, JavaScript, and Tailwind CSS. The project includes dynamic CMS API integration using Axios and an admin dashboard for managing website content. It provides a modern, responsive experience across pages such as Home, Leadership, Network, Franchise, Investor, Careers, and Contact.",
+    link: "https://corpuat.wellnessforever.in/",
+    image: "/wellness.png",
+  },
+  {
+    id: 3,
     title: "Billing Cart Web",
     techStack: ["Next.js", "Tailwind CSS", "E-Commerce", "JavaScript"],
     description:
@@ -35,7 +57,6 @@ const featuredProjects = [
     link: "https://billingcart.in/",
     image: "/project2.png",
   },
- 
 ];
 
 export default function Projects() {
@@ -103,7 +124,6 @@ export default function Projects() {
                 className="relative"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-center">
-                  
                   {/* Image Column with Float Animation */}
                   <div
                     className={`lg:col-span-7 relative group ${
@@ -126,7 +146,11 @@ export default function Projects() {
 
                     <motion.div
                       whileHover={{ y: -6 }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
                       className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden border border-blue-200/80 bg-white/80 backdrop-blur-md shadow-xl shadow-blue-500/10 group-hover:border-blue-400/60 transition-all duration-500"
                     >
                       <Image
@@ -138,7 +162,7 @@ export default function Projects() {
                       />
                       {/* Light subtle overlay on hover */}
                       <div className="absolute inset-0 bg-gradient-to-t from-blue-950/25 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      
+
                       {/* Floating Badge on Image */}
                       <div className="absolute top-3 left-3 sm:top-4 sm:left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-blue-100 text-[10px] sm:text-xs font-semibold text-blue-600 shadow-sm flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity">
                         <Code className="w-3 h-3 text-blue-500" />
@@ -181,7 +205,11 @@ export default function Projects() {
                     {/* Frosted White Description Card */}
                     <motion.div
                       whileHover={{ scale: 1.01 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 25,
+                      }}
                       className="relative rounded-2xl bg-white/90 p-5 sm:p-6 md:p-8 backdrop-blur-xl border border-blue-100 shadow-xl shadow-blue-500/5 hover:border-blue-300/80 transition-all duration-300 group"
                     >
                       {/* Top subtle blue highlight line */}
