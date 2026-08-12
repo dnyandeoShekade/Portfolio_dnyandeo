@@ -21,7 +21,7 @@ const featuredProjects = [
     description:
       "Developed a full-stack job portal with separate user and admin functionalities. Implemented user authentication and authorization using JWT with protected routes. Built features including job listing, job search, job applications, and user dashboard. Developed RESTful APIs using Node.js, Express.js, and MongoDB for users, jobs, and applications. Created a responsive and reusable UI using Next.js, React.js, and Tailwind CSS. Developed an admin dashboard to add, edit, and delete jobs, users, and applications.",
     link: "https://job-board-two-blush.vercel.app/",
-    image: "/job portal.png",
+    image: "/job-portal.png",
   },
   // {
   //   id: 1,
@@ -46,7 +46,7 @@ const featuredProjects = [
     description:
       "Wellness Forever Corporate Website is a responsive corporate web platform built using Next.js, React.js, JavaScript, and Tailwind CSS. The project includes dynamic CMS API integration using Axios and an admin dashboard for managing website content. It provides a modern, responsive experience across pages such as Home, Leadership, Network, Franchise, Investor, Careers, and Contact.",
     link: "https://corpuat.wellnessforever.in/",
-    image: "/wellness.png",
+    image: "/wellness1.png",
   },
   {
     id: 3,
