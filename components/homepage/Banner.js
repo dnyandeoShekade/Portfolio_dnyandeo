@@ -76,7 +76,7 @@ export default function HeroSection() {
               ease: "easeInOut"
             }
           }}
-          href="/Dnyandeo_Shekade_Resume (1).pdf"
+          href="/Dnyandeo_Shekade_Resume (3).pdf"
           download
           className="group relative inline-flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-5 py-2.5 sm:py-3 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-600 text-white font-semibold text-xs sm:text-base rounded-full shadow-xl shadow-blue-500/40 hover:shadow-blue-500/60 transition-all duration-300 overflow-hidden"
         >
