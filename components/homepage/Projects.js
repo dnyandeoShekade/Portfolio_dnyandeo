@@ -57,6 +57,15 @@ const featuredProjects = [
     link: "https://billingcart.in/",
     image: "/project2.png",
   },
+  {
+    id: 4,
+    title: "Cosmetic Surgery Landing Page",
+    techStack: ["Next.js", "React.js", "Tailwind CSS", "JavaScript"],
+    description:
+      "Built a polished cosmetic surgery clinic landing page with sections for treatments, specialist doctors, testimonials, clinic highlights, insights, and appointment booking. Created a clean, conversion-focused UI to showcase aesthetic and reconstructive surgery services, with a desktop-focused design.",
+    link: "https://cosmetic-landingpage.vercel.app/",
+    image: "/cosmetick.png",
+  },
 ];
 
 export default function Projects() {
