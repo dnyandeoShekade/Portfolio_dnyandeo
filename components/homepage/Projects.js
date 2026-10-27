@@ -9,6 +9,15 @@ import { Sparkles, Globe, ArrowUpRight, Code } from "lucide-react";
 const featuredProjects = [
   {
     id: 1,
+    title: "OneFusion | Travel & Lifestyle Platform",
+    techStack: ["Next.js", "React.js", "Tailwind CSS", "JavaScript"],
+    description:
+      "A digital ecosystem for discovering events, booking travel logistics, and securing lifestyle services in Nigeria. Key features include event ticketing (DettyFusion), eVisa & airport support, ride-hailing, luxury accommodation, and wellness booking. The platform streamlines travel and concierge management for tourists, diaspora returnees, and local residents in a single hub.",
+    link: "https://www.myonefusion.com/",
+    image: "/Onefusion Small Business Big Dreams.png",
+  },
+  {
+    id: 2,
     title: "Job Portal Web Application",
     techStack: [
       "Next.js",
@@ -23,17 +32,8 @@ const featuredProjects = [
     link: "https://job-board-two-blush.vercel.app/",
     image: "/job-portal.png",
   },
-  // {
-  //   id: 1,
-  //   title: "Yuva Nexus Website",
-  //   techStack: ["Next.js", "Tailwind CSS", "REST API", "SEO", "JavaScript"],
-  //   description:
-  //     "Developed the official company website for Yuva Nexus Tech LLP. Implemented dynamic routing using URL parameters for service, blog, and project detail pages. Integrated API handling to dynamically load content from the backend with dynamic SEO metadata in Next.js for maximum search visibility.",
-  //   link: "https://yuvanexus.com/",
-  //   image: "/project1.png",
-  // },
   {
-    id: 2,
+    id: 3,
     title: "Wellness Forever Corporate Website",
     techStack: [
       "Next.js",
@@ -49,7 +49,7 @@ const featuredProjects = [
     image: "/wellness1.png",
   },
   {
-    id: 3,
+    id: 4,
     title: "Billing Cart Web",
     techStack: ["Next.js", "Tailwind CSS", "E-Commerce", "JavaScript"],
     description:
@@ -58,12 +58,12 @@ const featuredProjects = [
     image: "/project2.png",
   },
   {
-    id: 4,
+    id: 5,
     title: "Cosmetic Surgery Landing Page",
     techStack: ["Next.js", "React.js", "Tailwind CSS", "JavaScript"],
     description:
       "Built a polished cosmetic surgery clinic landing page with sections for treatments, specialist doctors, testimonials, clinic highlights, insights, and appointment booking. Created a clean, conversion-focused UI to showcase aesthetic and reconstructive surgery services, with a desktop-focused design.",
-    link: "https://cosmetic-landingpage.vercel.app/",
+    link: "https://cosmeticssurgerycentre.com/",
     image: "/cosmetick.png",
   },
 ];
