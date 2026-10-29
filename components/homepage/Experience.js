@@ -13,7 +13,7 @@ const experienceCards = [
     duration: "Nov 2025 – Aug 2026 • 10 Months",
     description:
       "Worked on React.js, Next.js, Tailwind CSS, backend API integration, admin panels, UI performance optimization, bug fixing, and collaborated with designers in an Agile environment.",
-    tech: ["React.js", "Next.js", "Tailwind CSS", "javascript"],
+    tech: ["React.js", "Next.js", "Tailwind CSS", "javascript","node jsx","Express js"],
     link: "https://innovins.com",
   },
   {
@@ -23,7 +23,7 @@ const experienceCards = [
     duration: "Jun 2024 – Nov 2025 • 1 Year 6 Months",
     description:
       "Developed production-ready web applications using React.js, Next.js, and Tailwind CSS. Built admin panels, integrated REST APIs, converted Figma designs into responsive interfaces, and optimized website performance.",
-    tech: ["React.js", "Next.js", "Tailwind CSS", "javascript"],
+    tech: ["React.js", "Next.js", "Tailwind CSS", "javascript","node jsx","Express js"],
     link: "https://yuvanexus.com",
   },
 ];
