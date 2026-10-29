@@ -55,7 +55,7 @@ export default function Footer() {
             "Next.js",
             "JavaScript",
             "Tailwind CSS",
-            "ndoe js",
+            "node js",
             "express js",
             "postman",
             "CI CD",
